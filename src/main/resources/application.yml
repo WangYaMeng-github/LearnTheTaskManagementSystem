@@ -14,32 +14,12 @@ spring:
     url: jdbc:mysql://?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=Asia/Shanghai
     username:
     password:
-    filters: log4j,wall,mergeStat
     # 连接池大小根据实际情况调整
     max-active: 20
     max-pool-prepared-statement-per-connection-size: 20
-  redis:
-    host:
-    port: 6379
-    password:
-    #host:
-    #port:
-
-
-
-
-rocketmq:
-  name-server:
-  producer:
-    group:
 
 server:
   port: 8080 #项目端口
 
-eap:
-  dev: true
-  function:
-    reload: false
-  task:
-    enable: false
+
 
